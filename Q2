@@ -1,0 +1,41 @@
+include <stdio.h>
+
+int main() {
+    int num1;
+    int num2;
+    int sum, diff, product, quotient;
+    
+    printf("Enter the first number: ");
+    if (scanf("%d", &num1) != 1) {
+        printf("Invalid input for the first number.\n");
+        return 1;
+    }
+
+    printf("Enter the second number: ");
+    if (scanf("%d", &num2) != 1) {
+        printf("Invalid input for the second number.\n");
+        return 1;
+    }
+
+   
+
+    sum = num1 + num2;
+    diff = num1 - num2;
+    product = num1 * num2;
+
+   
+    if (num2 != 0) {
+        quotient = num1 / num2;
+        
+        
+        printf("Sum=%d, Diff=%d, Product=%d, Quotient=%d\n", 
+               sum, diff, product, quotient);
+    } 
+    else {
+       
+        printf("Sum=%d, Diff=%d, Product=%d, Quotient=Division by Zero Error\n", 
+               sum, diff, product);
+    }
+
+    return 0;
+}
