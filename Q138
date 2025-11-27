@@ -1,0 +1,22 @@
+//Print all enum names and integer values using a loop.
+#include <stdio.h>
+
+enum Colors {
+    RED,
+    GREEN,
+    BLUE,
+    YELLOW
+};
+
+int main() {
+
+    const char *colorNames[] = {"RED", "GREEN", "BLUE", "YELLOW"};
+
+    int total = sizeof(colorNames) / sizeof(colorNames[0]);
+
+    for (int i = 0; i < total; i++) {
+        printf("%s = %d\n", colorNames[i], i);
+    }
+
+    return 0;
+}
